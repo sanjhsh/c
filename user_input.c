@@ -1,5 +1,6 @@
 //user input:-
 # include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -9,21 +10,20 @@ int main()
     
     char grade;
     printf("what grade did you get?\n");
-    scanf("%c",&grade);
+    scanf(" %c",&grade);
 
     char name[25];
     printf("what is your name?\n");
     scanf("%s" ,name);
 
-    printf("my name is %s\n", name);
-    printf("i got %c grade\n", grade);
+    char full_name[100];
+    printf("what's your name?\n");
+    fgets(full_name, 100, stdin);
+
+    printf("your name is %s\n", name);
+    printf("you got %c grade\n", grade);
     printf("you are %d years old\n",age);
+    printf("your name is %s", full_name);
 
-    char full_name[25];
-
-    printf("what is your full name?");
-    fgets(full_name,25,stdin);
-
-    printf("my name is %s",full_name);
     return 0;
 }
