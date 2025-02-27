@@ -8,8 +8,7 @@ int main()
 
     printf("enter the radius of the circle:\n");
     scanf("%lf", &radius);
-    printf("enter the circumference of the circle:\n");
-    scanf("%lf", &circumference);
+    
 
     circumference= 2*pi* radius;
     printf("circumference=%lf",circumference);
