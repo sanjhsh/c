@@ -20,14 +20,14 @@ int main(){
     printf("is the temperature in 'C' or'F'?:\n");
     scanf("%c", &temperature);
 
-    celcius = (reading * 9 / 5) + 32;
-
 
 
     temperature = toupper(temperature);
 
     printf("what is the reading of the temperature?\n");
     scanf("%f", &reading);
+
+    celcius = (reading*9/5)+32;
 
     if (temperature =='C'){
         printf("the temperature is already in celcius and it is %f:\n",reading);
@@ -40,7 +40,7 @@ int main(){
     else {
         printf("the input is invalid");
     }
-
+    
     return 0;
 
 }
