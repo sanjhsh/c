@@ -11,7 +11,7 @@ int main(){
     printf("enter side B:");
     scanf("%lf", &B);
 
-    C= sqrt(A*A + B*B); 
+    C= sqrt(A*A + B*B);
     printf("the hypoteneous of the traingle is %lf:", C);
 
 
