@@ -27,13 +27,13 @@ int main(){
     printf("what is the reading of the temperature?\n");
     scanf("%f", &reading);
 
-    celcius = (reading*9/5)+32;
 
     if (temperature =='C'){
         printf("the temperature is already in celcius and it is %f:\n",reading);
         }
 
     else if (temperature=='F'){
+        celcius = (reading*9/5)+32;
         printf("the temperature is %f in celcius\n:", celcius);
     }
 
