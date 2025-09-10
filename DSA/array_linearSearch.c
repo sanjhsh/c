@@ -4,8 +4,10 @@ int linear_search(int array[],int size, int element){
         if (array[i]==element){
             return 1;
         }
-    return -1;
+   
     }
+       return -1;
+       
 
 }
 int main(){
@@ -14,10 +16,10 @@ int main(){
     int size=sizeof(array)/sizeof(array[0]);
 
     
-    printf("enter the element:");
+    printf("enter the element: ");
     scanf("%d",&element);
 
-    int search= linear_search(array[5],size,element);
+    int search= linear_search(array,size,element);
     printf("%d",search);
 
 return 0;
