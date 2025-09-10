@@ -2,7 +2,7 @@
 int linear_search(int array[],int size, int element){
     for(int i=0; i<size; i++){
         if (array[i]==element){
-            return 1;
+            return i;
         }
    
     }
