@@ -6,5 +6,5 @@ int main(){
     for(i=0;i<size;i++) {
         printf("%d \n" ,array[i]);
     }
-     return 0;
+    return 0;
 }
